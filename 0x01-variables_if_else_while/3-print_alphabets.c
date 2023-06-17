@@ -3,6 +3,7 @@
  * main - programming starting point
  * Return: eachtime 0 (success)
  */
+
 int main(void)
 {
 char c;

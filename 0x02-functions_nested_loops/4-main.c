@@ -1,5 +1,7 @@
 #include "main.h"
+#include <unistd.h>
 #include <stdio.h>
+
 /**
  * main - check the code.
  *
@@ -9,13 +11,13 @@ int main(void)
 {
     int r;
 
-    r = isalpha('H');
+    r = _isalpha('H');
     putchar(r + '0');
-    r = isalpha('o');
+    r = _isalpha('o');
     putchar(r + '0');
-    r = isalpha(108);
+    r = _isalpha(108);
     putchar(r + '0');
-    r = isalpha(';');
+    r = _isalpha(';');
     putchar(r + '0');
     putchar('\n');
     return (0);

@@ -1,39 +1,34 @@
 #include "main.h"
 
 /**
- * jack_bauer - prints the 9 times table, starting with 0
+ * jack_bauer - Prints every minute of the day of Jack Bauer
+ * Return: ...
  */
 
 void jack_bauer(void)
+
 {
-	int i, j, k;
-	
-	for (i = 0; i < 10; i++)
+	int a, b, c, d;
+
+	for (a = 0; a <= 2; a++)
 	{
-		for (j = 0; j < 10; j++)
-		{
-			k = j * i;
-
-			if (j == 0)
-			{
-				_putchar(k + '0');
-			}
-
-			if (k < 10 && j != 0)
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(k + '0');
-			} 
-			else if (k >= 10)
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar((k / 10) + '0');
-				_putchar((k % 10) + '0');
-			}
-		}
-		_putchar('\n');
+	for (b = 0; b <= 9; b++)
+	{
+	if ((a <= 1 && b <= 9) || (a <= 2 && b <= 3))
+	{
+	for (c = 0; c <= 5; c++)
+	{
+	for (d = 0; d <= 9; d++)
+	{
+	_putchar(a + '0');
+	_putchar(b + '0');
+	_putchar(58);
+	_putchar(c + '0');
+	_putchar(d + '0');
+	_putchar('\n');
+	}
+	}
+	}
+	}
 	}
 }
